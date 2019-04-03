@@ -1,0 +1,100 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+header {
+  background: black;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 5px 0;
+}
+
+nav {
+  float: left;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #d3d3d3;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #d3d3d3;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 300ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.head{
+  background-image: url('/images/cafe.jpg');
+  /* padding-top: 170px; */
+  height: 860px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+}
+.nav-container{
+  width: 200px;
+}
+
+.title,
+p{
+  color: aliceblue;
+  margin:auto;
+  text-transform: uppercase;
+  text-shadow: ghostwhite;
+
+}
+
+.title{
+  line-height: 3;
+  font-size: 200px;
+}
+p{
+  font-size: 20px;
+}
